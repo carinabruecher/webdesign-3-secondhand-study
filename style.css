@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Barlow !important;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 70pt;
+    line-height: 70pt;
+    color: #2F8E12;
+}
+
+h2 {
+    padding-top: 15px;
+    font-size: 18pt;
+}
+
+h3 {
+    font-size: 28pt;
+    color: #2F8E12;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15pt !important;
+}
+
+hr {
+    border: 5px solid #2F8E12;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    margin: 0px !important;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    /* Scroll Snap */
+    scroll-snap-align: center;
+}
+
+.headline {
+    padding-top: 100px;
+}
+
+.underline {
+    margin-top: -20px;
+}
+
+.illu-title-page {
+    height: 45%;
+    padding-top: 10%;
+}
+
+.headline-block {
+    padding-left: 40%;
+    padding-right: 100px;
+    padding-top: 18%;
+}
+
+.text-study {
+    padding-right: 100px;
+}
+
+.charts {
+    padding-top: 70px;
+}
+
+.charts-col {
+    padding-right: 50px;
+    font-size: 17px;
+}
+
+.description-text {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.circle-yes {
+    color: #2F8E12;
+}
+
+.circle-no {
+    color: #B9B9B9;
+}
+
+.legend {
+    padding-top: 60px;
+}
+
+.illu-group {
+    height: 400px;
+    padding-left: 28%;
+}
+
+.group-lable {
+    text-align: center;
+}
+
+.about-study {
+    padding-left: 23%;
+    padding-right: 25%;
+    padding-top: 8%;
+}
+
+.numbers-head {
+    padding-left: 8%;
+    padding-right: 30%;
+}
+
+.numbers-content {
+    padding-left: 8%;
+    padding-right: 3%;
+}
+
+.characters-head {
+    padding-left: 8%;
+    padding-right: 12%;
+}
+
+.underline-study {
+    width: 170px;
+}
+
+.underline-numbers {
+    width: 300px;
+}
+
+.underline-characters {
+    width: 340px;
+}
+
+/* Section Images */
+section#home {
+    background: url('assets/background-home-3.png')no-repeat center center/cover;;
+}
+
+section#study {
+    background: url('assets/background-study-2.png')no-repeat center center/cover;;
+}
+
+section#numbers {
+    background: url('assets/background-numbers.png')no-repeat center center/cover;;
+}
+
+section#characters {
+    background: url('assets/background-characters.png')no-repeat center center/cover;;
+}
+
+section#climate {
+    background: url('assets/background-climate.png')no-repeat center center/cover;;
+}
+
+section#consum {
+    background: url('assets/background-consum.png')no-repeat center center/cover;;
+}
+
+section#footer {
+    background: url('assets/background-footer.png')no-repeat center center/cover;;
+}
