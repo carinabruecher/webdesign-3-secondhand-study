@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
 </head>
 <body>
 <div class="container">
@@ -60,23 +62,23 @@
     <div class="numbers-content">
         <div class="row charts" style="widht:100%;">
             <div class="col charts-col">
-                <canvas id="pie1" width="100" height="100"></canvas>
+                <div id="pie1" ></div>
                 <p class="description-text">Vermutliche Zunahme der Bedeutung nachhaltigen Handelns</p>
             </div>
             <div class="col charts-col">
-                <canvas id="pie2" width="100" height="100"></canvas>
+                <div id="pie2" ></div>
                 <p class="description-text">Achten auf Resoucenschonung</p>
             </div>
             <div class="col charts-col">
-                <canvas id="pie3" width="100" height="100"></canvas>
+                <div id="pie3" ></div>
                 <p class="description-text">Von einer Person aus dem engeren Umfeld motiviert</p>
             </div>
             <div class="col charts-col">
-                <canvas id="pie4" width="100" height="100"></canvas>
+                <div id="pie4" ></div>
                 <p class="description-text">Gebrauchte Produkte sind gut für die Umwelt</p>
             </div>
             <div class="col charts-col">
-                <canvas id="pie5" width="100" height="100"></canvas>
+                <div id="pie5" ></div>
                 <p class="description-text">In Zukunft mehr gebrauchte Sachen kaufen</p>
             </div>
         </div>
@@ -122,13 +124,12 @@
     </div>
     <div class="row" style="height: 50px;">
         <div class="col">
-            <div id="chartdiv"></div>
         </div>
         <div class="col">
-            <canvas id="group2-chart-clima" width="200" height="200"></canvas>
+
         </div>
         <div class="col">
-            <canvas id="group3-chart-clima" width="200" height="200"></canvas>
+
         </div>
         <div class="col">
             <div class="questions-climate">
@@ -186,8 +187,6 @@
         Dozent: Dipl.-Des. Lothar B. Blum.
     </p>
 </section>
-    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
     <script src="charts.js"></script>
 </div>
 </body>

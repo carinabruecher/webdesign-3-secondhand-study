@@ -1,217 +1,143 @@
-var ctx = document.getElementById('pie1').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'pie',
+//pie charts
+//chart pie1
+var chart = am4core.create("pie1", am4charts.PieChart);
 
-    // The data for our dataset
-    data: {
-        labels: ['stimme zu', 'stimme nicht zu'],
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: ['#2F8E12', '#B9B9B9'],
-            data: [60, 40]
-        }]
-    },
+chart.data = [{
+    "country": "stimme zu",
+    "litres": 60
+}, {
+    "country": "stimme nicht zu",
+    "litres": 40
+},];
 
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        }
-    }
-});
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+pieSeries.dataFields.hidden = "hidden";
 
-var ctx = document.getElementById('pie2').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'pie',
+pieSeries.labels.template.disabled = true;
+pieSeries.ticks.template.disabled = true;
 
-    // The data for our dataset
-    data: {
-        labels: ['stimme zu', 'stimme nicht zu'],
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: ['#2F8E12', '#B9B9B9'],
-            data: [61, 39]
-        }]
-    },
+pieSeries.colors.list = [
+    am4core.color("#2F8E12"),
+    am4core.color("#B9B9B9"),
+];
 
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        }
-    }
-});
+pieSeries.slices.template.stroke = am4core.color("#ffffff");
+pieSeries.slices.template.strokeWidth = 2;
+pieSeries.slices.template.strokeOpacity = 1;
 
-var ctx = document.getElementById('pie3').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'pie',
+//chart pie2
+var chart = am4core.create("pie2", am4charts.PieChart);
 
-    // The data for our dataset
-    data: {
-        labels: ['stimme zu', 'stimme nicht zu'],
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: ['#2F8E12', '#B9B9B9'],
-            data: [45, 55]
-        }]
-    },
+chart.data = [{
+    "country": "stimme zu",
+    "litres": 61
+}, {
+    "country": "stimme nicht zu",
+    "litres": 39
+},];
 
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        }
-    }
-});
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+pieSeries.dataFields.hidden = "hidden";
 
-var ctx = document.getElementById('pie4').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'pie',
+pieSeries.labels.template.disabled = true;
+pieSeries.ticks.template.disabled = true;
 
-    // The data for our dataset
-    data: {
-        labels: ['stimme zu', 'stimme nicht zu'],
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: ['#2F8E12', '#B9B9B9'],
-            data: [64, 36]
-        }]
-    },
+pieSeries.colors.list = [
+    am4core.color("#2F8E12"),
+    am4core.color("#B9B9B9"),
+];
 
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        }
-    }
-});
+pieSeries.slices.template.stroke = am4core.color("#ffffff");
+pieSeries.slices.template.strokeWidth = 2;
+pieSeries.slices.template.strokeOpacity = 1;
 
-var ctx = document.getElementById('pie5').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'pie',
+//chart pie3
+var chart = am4core.create("pie3", am4charts.PieChart);
 
-    // The data for our dataset
-    data: {
-        labels: ['stimme zu', 'stimme nicht zu'],
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: ['#2F8E12', '#B9B9B9'],
-            data: [47, 53]
-        }]
-    },
+chart.data = [{
+    "country": "stimme zu",
+    "litres": 45
+}, {
+    "country": "stimme nicht zu",
+    "litres": 55
+},];
 
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        }
-    }
-});
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+pieSeries.dataFields.hidden = "hidden";
 
-new Chart(document.getElementById("group1-chart-clima"), {
-    type: 'scatter',
-    data: {
-        datasets: [{
-            label: 'Gebrauchtkäufer*innen',
-            backgroundColor: '#CE3700',
-            type: 'scatter',
-            data: [{
-                x: 75,
-                y: 1
-            }, {
-                x: 73,
-                y: 2
-            }, {
-                x: 66,
-                y: 3
-            }, {
-                x: 66,
-                y: 4
-            }, {
-                x: 64,
-                y: 5
-            }, {
-                x: 57,
-                y: 6
-            }, {
-                x: 56,
-                y: 7
-            }, {
-                x: 55,
-                y: 8
-            }, {
-                x: 16,
-                y: 9
-            }],
-        }],
-        options: {},
-    }
-});
+pieSeries.labels.template.disabled = true;
+pieSeries.ticks.template.disabled = true;
 
-new Chart(document.getElementById("group2-chart-clima"), {
-    type: 'scatter',
-    data: {
-        datasets: [{
-            label: 'Gebrauchtkäufer*innen',
-            backgroundColor: '#CE3700',
-            type: 'scatter',
-            data: [{
-                x: 75,
-                y: 1
-            }, {
-                x: 73,
-                y: 2
-            }, {
-                x: 66,
-                y: 3
-            }, {
-                x: 66,
-                y: 4
-            }, {
-                x: 64,
-                y: 5
-            }, {
-                x: 57,
-                y: 6
-            }, {
-                x: 56,
-                y: 7
-            }, {
-                x: 55,
-                y: 8
-            }, {
-                x: 16,
-                y: 9
-            }],
-        }],
-        options: {},
-    }
-});
+pieSeries.colors.list = [
+    am4core.color("#2F8E12"),
+    am4core.color("#B9B9B9"),
+];
 
-new Chart(document.getElementById("group3-chart-clima"), {
-    type: 'line',
-    data: {
-        labels: ['0%','25%','50%','75%','100%'],
-        datasets: [{
-            data: [75,73,66,66,64,57,56,55,16],
-            label: "Gebrauchtkäufer*innen",
-            lineTension: 0,
-            borderColor: "#3e95cd",
-            fill: false
-        }, {
-            data: [67,55,28,53,58,35,50,25,27],
-            label: "Neukäufer*innen",
-            lineTension: 0,
-            borderColor: "#8e5ea2",
-            fill: false
-        }
-        ]
-    },
-    options: {
-    }
-});
+pieSeries.slices.template.stroke = am4core.color("#ffffff");
+pieSeries.slices.template.strokeWidth = 2;
+pieSeries.slices.template.strokeOpacity = 1;
+
+//chart pie4
+var chart = am4core.create("pie4", am4charts.PieChart);
+
+chart.data = [{
+    "country": "stimme zu",
+    "litres": 64
+}, {
+    "country": "stimme nicht zu",
+    "litres": 36
+},];
+
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+pieSeries.dataFields.hidden = "hidden";
+
+pieSeries.labels.template.disabled = true;
+pieSeries.ticks.template.disabled = true;
+
+pieSeries.colors.list = [
+    am4core.color("#2F8E12"),
+    am4core.color("#B9B9B9"),
+];
+
+pieSeries.slices.template.stroke = am4core.color("#ffffff");
+pieSeries.slices.template.strokeWidth = 2;
+pieSeries.slices.template.strokeOpacity = 1;
+
+//chart pie5
+var chart = am4core.create("pie5", am4charts.PieChart);
+
+chart.data = [{
+    "country": "stimme zu",
+    "litres": 47
+}, {
+    "country": "stimme nicht zu",
+    "litres": 53
+},];
+
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+pieSeries.dataFields.hidden = "hidden";
+
+pieSeries.labels.template.disabled = true;
+pieSeries.ticks.template.disabled = true;
+
+pieSeries.colors.list = [
+    am4core.color("#2F8E12"),
+    am4core.color("#B9B9B9"),
+];
+
+pieSeries.slices.template.stroke = am4core.color("#ffffff");
+pieSeries.slices.template.strokeWidth = 2;
+pieSeries.slices.template.strokeOpacity = 1;
+
+//line charts climate
+//climate line 1

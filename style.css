@@ -96,11 +96,6 @@ section {
     padding-top: 70px;
 }
 
-.charts-col {
-    padding-right: 50px;
-    font-size: 17px;
-}
-
 .description-text {
     padding-top: 20px;
     text-align: center;
@@ -158,6 +153,10 @@ section {
 
 .underline-characters {
     width: 340px;
+}
+
+#chartdiv {
+    width: 100%;
 }
 
 /* Section Images */
