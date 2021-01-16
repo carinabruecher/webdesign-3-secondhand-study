@@ -143,6 +143,14 @@ section {
     padding-right: 12%;
 }
 
+.climate-headline {
+    padding-left: 8%;
+}
+
+.climate-content {
+    padding-left: 8%;
+}
+
 .underline-study {
     width: 170px;
 }
@@ -155,8 +163,16 @@ section {
     width: 340px;
 }
 
+.underline-climate {
+    width: 525px;
+}
+
 #chartdiv {
     width: 100%;
+}
+
+#climate1 {
+    height: 300%;
 }
 
 /* Section Images */
