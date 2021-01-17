@@ -183,8 +183,8 @@ chart.data = [{
 }];
 
 // Create axes
-var dateAxis = chart.yAxes.push(new am4charts.DateAxis());
-dateAxis.renderer.inversed = true;
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.renderer.inversed = true;
 
 // Create value axis
 var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
@@ -192,7 +192,7 @@ var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
 // Create series
 var series1 = chart.series.push(new am4charts.LineSeries());
 series1.dataFields.valueX = "used";
-series1.dataFields.dateY = "question";
+series1.dataFields.valueY = "question";
 series1.strokeWidth = 3;
 series1.strokeDasharray = 4;
 series1.bullets.push(new am4charts.CircleBullet());
@@ -200,7 +200,7 @@ series1.tooltipText = "{valueX.value}";
 
 var series2 = chart.series.push(new am4charts.LineSeries());
 series2.dataFields.valueX = "new";
-series2.dataFields.dateY = "question";
+series2.dataFields.valueY = "question";
 series2.strokeWidth = 3;
 series2.strokeDasharray = 4;
 series2.bullets.push(new am4charts.CircleBullet());
@@ -218,6 +218,7 @@ range.strictMinMax= true;
 range.renderer.minGridDistance = 25;
 
 
-var range2 = dateAxis.axisRanges.create();
-range2.value = 120;
-range2.endValue = 200;
+var range2 = valueAxis.axisRanges.create();
+range2.value = 1;
+range2.endValue = 9;
+
