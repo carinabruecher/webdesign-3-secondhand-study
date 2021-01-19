@@ -9,8 +9,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
 <body>
 <div class="container">
@@ -130,14 +132,26 @@
         </div>
         <div class="climate-content">
             <div class="row">
-                <div class="col">
-                    <div id="climate1"></div>
+                <div class="col climate-charts-one">
+                    <figure class="highcharts-figure">
+                        <div id="climate1"></div>
+                        <p class="highcharts-description">
+                        </p>
+                    </figure>
                 </div>
                 <div class="col">
-
+                    <figure class="highcharts-figure">
+                        <div id="climate2"></div>
+                        <p class="highcharts-description">
+                        </p>
+                    </figure>
                 </div>
                 <div class="col">
-
+                    <figure class="highcharts-figure">
+                        <div id="climate3"></div>
+                        <p class="highcharts-description">
+                        </p>
+                    </figure>
                 </div>
                 <div class="col">
                     <div class="questions-climate">

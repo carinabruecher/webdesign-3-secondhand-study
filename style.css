@@ -167,12 +167,12 @@ section {
     width: 525px;
 }
 
-#chartdiv {
-    width: 100%;
+.climate-charts-one {
+    height: 70%;
 }
 
-#climate1 {
-    height: 300%;
+#chartdiv {
+    width: 100%;
 }
 
 /* Section Images */
