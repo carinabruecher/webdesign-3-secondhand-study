@@ -1,7 +1,8 @@
 Highcharts.chart('climate1', {
     chart: {
         type: 'line',
-        inverted: true
+        inverted: true,
+        height: '140 %'
     },
     title: {
         text: ' '
@@ -44,13 +45,19 @@ Highcharts.chart('climate1', {
         data: [67,55,28,53,58,35,50,25,27],
         color: '#7e0509'
 
-    }]
+    }],
+    tooltip: {
+        formatter: function() {
+            return 'Der Frage ' + this.x + ' stimmen ' +  this.y + '% der ' + this.series.name + ' zu.' ;
+        }
+    }
 });
 
 Highcharts.chart('climate2', {
     chart: {
         type: 'line',
-        inverted: true
+        inverted: true,
+        height: '140 %'
     },
     title: {
         text: ' '
@@ -93,13 +100,19 @@ Highcharts.chart('climate2', {
         data: [72,62,48,61,65,47,54,40,21],
         color: '#46d3ed'
 
-    }]
+    }],
+    tooltip: {
+        formatter: function() {
+            return 'Der Frage ' + this.x + ' stimmen ' +  this.y + '% der ' + this.series.name + ' zu.' ;
+        }
+    }
 });
 
 Highcharts.chart('climate3', {
     chart: {
         type: 'line',
-        inverted: true
+        inverted: true,
+        height: '140 %'
     },
     title: {
         text: ' '
@@ -142,5 +155,10 @@ Highcharts.chart('climate3', {
         data: [69,60,42,56,53,47,49,38,25],
         color: '#F48300'
 
-    }]
+    }],
+    tooltip: {
+        formatter: function() {
+            return 'Der Frage ' + this.x + ' stimmen ' +  this.y + '% der ' + this.series.name + ' zu.' ;
+        }
+    }
 });
