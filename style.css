@@ -152,6 +152,20 @@ section {
     padding-top: 2%
 }
 
+.footer-content {
+    padding-left:  8%;
+}
+
+
+.consum-headline {
+    padding-left: 8%;
+}
+
+.consum-content {
+    padding-left: 8%;
+    padding-top: 2%
+}
+
 .underline-study {
     width: 170px;
 }
@@ -166,6 +180,18 @@ section {
 
 .underline-climate {
     width: 525px;
+}
+
+.underline-consum {
+    width: 293px;
+}
+
+.underline-quellen {
+    width: 129px;
+}
+
+.underline-impressum {
+    width: 195px;
 }
 
 .climate-charts-one {
@@ -216,11 +242,11 @@ section#characters {
 }
 
 section#climate {
-    background: url('assets/background-climate-4.png')no-repeat center center/cover;;
+    background: url('assets/background-climate-5.png')no-repeat center center/cover;;
 }
 
 section#consum {
-    background: url('assets/background-consum.png')no-repeat center center/cover;;
+    background: url('assets/background-consum-2.png')no-repeat center center/cover;;
 }
 
 section#footer {

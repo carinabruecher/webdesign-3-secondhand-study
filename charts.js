@@ -162,3 +162,395 @@ Highcharts.chart('climate3', {
         }
     }
 });
+
+
+Highcharts.chart('consum1', {
+    chart: {
+        type: 'line',
+        inverted: true,
+        height: '140 %'
+    },
+    title: {
+        text: ' '
+    },
+    accessibility: {
+        keyboardNavigation: {
+            seriesNavigation: {
+                mode: 'serialize'
+            }
+        }
+    },
+
+    xAxis: {
+        categories: [
+            '1','2','3','4','5','6','7'
+        ],
+        gridLineWidth: 1
+    },
+
+    yAxis: {
+        title: {
+            text: 'Prozent der Zustimmung'
+        },
+        allowDecimals: false,
+        min: 0,
+        max: 100,
+        gridLineWidth: 1
+    },
+    plotOptions: {
+        area: {
+            fillOpacity: 0.5
+        }
+    },
+    series: [{
+        name: 'Gebraucht-Käufer*innen',
+        data: [88,83,63,48,45,14,10],
+        color: '#c73b1a'
+    }, {
+        name: 'Neu-Käufer*innen',
+        data: [86,83,30,42,33,16,12],
+        color: '#7e0509'
+
+    }],
+    tooltip: {
+        formatter: function() {
+            return 'Der Frage ' + this.x + ' stimmen ' +  this.y + '% der ' + this.series.name + ' zu.' ;
+        }
+    }
+});
+
+Highcharts.chart('consum2', {
+    chart: {
+        type: 'line',
+        inverted: true,
+        height: '140 %'
+    },
+    title: {
+        text: ' '
+    },
+    accessibility: {
+        keyboardNavigation: {
+            seriesNavigation: {
+                mode: 'serialize'
+            }
+        }
+    },
+
+    xAxis: {
+        categories: [
+            '1','2','3','4','5','6','7'
+        ],
+        gridLineWidth: 1
+    },
+
+    yAxis: {
+        title: {
+            text: 'Prozent der Zustimmung'
+        },
+        allowDecimals: false,
+        min: 0,
+        max: 100,
+        gridLineWidth: 1
+    },
+    plotOptions: {
+        area: {
+            fillOpacity: 0.5
+        }
+    },
+    series: [{
+        name: 'Unter 30',
+        data: [79,77,50,47,45,21,18],
+        color: '#0083c2'
+    }, {
+        name: 'über 30',
+        data: [88,83,46,44,38,14,10],
+        color: '#46d3ed'
+
+    }],
+    tooltip: {
+        formatter: function() {
+            return 'Der Frage ' + this.x + ' stimmen ' +  this.y + '% der ' + this.series.name + ' zu.' ;
+        }
+    }
+});
+
+Highcharts.chart('consum3', {
+    chart: {
+        type: 'line',
+        inverted: true,
+        height: '140 %'
+    },
+    title: {
+        text: ' '
+    },
+    accessibility: {
+        keyboardNavigation: {
+            seriesNavigation: {
+                mode: 'serialize'
+            }
+        }
+    },
+
+    xAxis: {
+        categories: [
+            '1','2','3','4','5','6','7'
+        ],
+        gridLineWidth: 1
+    },
+
+    yAxis: {
+        title: {
+            text: 'Prozent der Zustimmung'
+        },
+        allowDecimals: false,
+        min: 0,
+        max: 100,
+        gridLineWidth: 1
+    },
+    plotOptions: {
+        area: {
+            fillOpacity: 0.5
+        }
+    },
+    series: [{
+        name: 'West',
+        data: [87,84,47,45,40,14,11],
+        color: '#f8c919'
+    }, {
+        name: 'Ost',
+        data: [86,77,44,44,36,20,13],
+        color: '#F48300'
+
+    }],
+    tooltip: {
+        formatter: function() {
+            return 'Der Frage ' + this.x + ' stimmen ' +  this.y + '% der ' + this.series.name + ' zu.' ;
+        }
+    }
+});
+
+
+Highcharts.chart('pie1', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+        height: '90 %'
+
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '<b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: false
+        }
+    },
+    series: [{
+        name: 'Meinungen',
+        colorByPoint: true,
+        data: [{
+            name: 'stimme zu',
+            y: 60,
+            color: '#2F8E12'
+        }, {
+            name: 'stimme nicht zu',
+            y: 40,
+            color: '#B9B9B9'
+        }]
+    }]
+});
+
+Highcharts.chart('pie2', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+        height: '90 %'
+
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '<b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: false
+        }
+    },
+    series: [{
+        name: 'Meinungen',
+        colorByPoint: true,
+        data: [{
+            name: 'stimme zu',
+            y: 61,
+            color: '#2F8E12'
+        }, {
+            name: 'stimme nicht zu',
+            y: 39,
+            color: '#B9B9B9'
+        }]
+    }]
+});
+
+Highcharts.chart('pie3', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+        height: '90 %'
+
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '<b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: false
+        }
+    },
+    series: [{
+        name: 'Meinungen',
+        colorByPoint: true,
+        data: [{
+            name: 'stimme zu',
+            y: 45,
+            color: '#2F8E12'
+        }, {
+            name: 'stimme nicht zu',
+            y: 55,
+            color: '#B9B9B9'
+        }]
+    }]
+});
+
+Highcharts.chart('pie4', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+        height: '90 %'
+
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '<b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: false
+        }
+    },
+    series: [{
+        name: 'Meinungen',
+        colorByPoint: true,
+        data: [{
+            name: 'stimme zu',
+            y: 64,
+            color: '#2F8E12'
+        }, {
+            name: 'stimme nicht zu',
+            y: 36,
+            color: '#B9B9B9'
+        }]
+    }]
+});
+
+Highcharts.chart('pie5', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+        height: '90 %'
+
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '<b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: false
+        }
+    },
+    series: [{
+        name: 'Meinungen',
+        colorByPoint: true,
+        data: [{
+            name: 'stimme zu',
+            y: 47,
+            color: '#2F8E12'
+        }, {
+            name: 'stimme nicht zu',
+            y: 53,
+            color: '#B9B9B9'
+        }]
+    }]
+});
