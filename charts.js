@@ -21,14 +21,8 @@ Highcharts.chart('climate1', {
         ],
         plotBands: [{
             color: 'rgba(47, 142, 18, 0.09)',
-            from: 0.5,
-            to: 1.5
-        }, {
-            color: 'rgba(0, 255, 0, 0.05)',
-            from: 3
-        }, {
-            color: 'rgba(250, 0, 0, 0.05)',
-            from: 6
+            from: -1,
+            to: 9
         }],
         gridLineWidth: 1
     },
@@ -85,6 +79,13 @@ Highcharts.chart('climate2', {
         categories: [
             '1','2','3','4','5','6','7','8','9'
         ],
+        plotBands: [
+            {
+                color: 'rgba(47, 142, 18, 0.09)',
+                from: 0.5,
+                to: 3.5
+            }
+        ],
         gridLineWidth: 1
     },
 
@@ -139,6 +140,18 @@ Highcharts.chart('climate3', {
     xAxis: {
         categories: [
             '1','2','3','4','5','6','7','8','9'
+        ],
+        plotBands: [
+            {
+                color: 'rgba(47, 142, 18, 0.09)',
+                from: 1.5,
+                to: 2.5
+            },
+            {
+                color: 'rgba(47, 142, 18, 0.09)',
+                from: 4.5,
+                to: 5.5
+            }
         ],
         gridLineWidth: 1
     },
@@ -196,6 +209,18 @@ Highcharts.chart('consum1', {
         categories: [
             '1','2','3','4','5','6','7'
         ],
+        plotBands: [
+            {
+                color: 'rgba(47, 142, 18, 0.09)',
+                from: 1.5,
+                to: 2.5
+            },
+            {
+                color: 'rgba(47, 142, 18, 0.09)',
+                from: 3.5,
+                to: 4.5
+            }
+        ],
         gridLineWidth: 1
     },
 
@@ -251,6 +276,18 @@ Highcharts.chart('consum2', {
         categories: [
             '1','2','3','4','5','6','7'
         ],
+        plotBands: [
+            {
+                color: 'rgba(47, 142, 18, 0.09)',
+                from: -1,
+                to: 1.5
+            },
+            {
+                color: 'rgba(47, 142, 18, 0.09)',
+                from: 4.5,
+                to: 6.5
+            }
+        ],
         gridLineWidth: 1
     },
 
@@ -305,6 +342,18 @@ Highcharts.chart('consum3', {
     xAxis: {
         categories: [
             '1','2','3','4','5','6','7'
+        ],
+        plotBands: [
+            {
+                color: 'rgba(47, 142, 18, 0.09)',
+                from: 0.5,
+                to: 1.5
+            },
+            {
+                color: 'rgba(47, 142, 18, 0.09)',
+                from: 4.5,
+                to: 5.5
+            }
         ],
         gridLineWidth: 1
     },
