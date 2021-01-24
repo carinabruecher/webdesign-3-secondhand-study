@@ -6,7 +6,7 @@
 .text-hover .text-hover-content {
     visibility: hidden;
     width: 300px;
-    background-color: rgba(255,255,255,50);
+    background-color: rgba(255, 255, 255, 0.9);
     color: black;
     text-align: center;
     border-radius: 6px;
@@ -17,7 +17,7 @@
     top: 150%;
     left: 50%;
     margin-left: -60px;
-    box-shadow: 2px 2px 5px 0px #D4D4D4;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .text-hover .text-hover-content::after {
     content: "";
@@ -44,7 +44,7 @@
 .tooltip-right .tooltiptext-right {
     visibility: hidden;
     width: 300px;
-    background-color: rgba(255, 255, 255, 30);
+    background-color: rgba(255, 255, 255, 0.9);
     color: black;
     text-align: center;
     border-radius: 6px;
@@ -54,7 +54,7 @@
     z-index: 1;
     top: 10px;
     left: 141%;
-    box-shadow: 2px 2px 5px 0px #000000;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .tooltip-right .tooltiptext-right::after {
     content: "";
@@ -78,7 +78,7 @@
 .tooltip-left .tooltiptext-left {
     visibility: hidden;
     width: 300px;
-    background-color: rgba(255,255,255,50);
+    background-color: rgba(255, 255, 255, 0.9);
     color: black;
     text-align: center;
     border-radius: 6px;
@@ -88,7 +88,7 @@
     z-index: 1;
     top: -17px;
     right: 105%;
-    box-shadow: 2px 2px 5px 0px #D4D4D4;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .tooltip-left .tooltiptext-left::after {
     content: "";
@@ -102,6 +102,131 @@
 }
 .tooltip-left:hover .tooltiptext-left {
     visibility: visible;
+}
+
+/* Sprechbubble Left*/
+.speech-left {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.speech-left .speech-bubble-left {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    right: 105%;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.speech-left .speech-bubble-left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #2F8E12;
+}
+.speech-left:hover .speech-bubble-left {
+    visibility: visible;
+}
+
+/* Sprechbubble Right*/
+.speech-right {
+    position: relative;
+    display: inline-block;
+}
+.speech-right .speech-bubble-right {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    left: 121%;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.speech-right .speech-bubble-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #2F8E12 transparent transparent;
+}
+.speech-right:hover .speech-bubble-right {
+    visibility: visible;
+}
+
+/* Color IDs*/
+.used {
+    color: #CE3700;
+}
+#used-border {
+    border-color: #CE3700;
+}
+#used-border-2 {
+    border-color: #CE3700;
+}
+.new {
+    color: #7E0509;
+}
+#new-border {
+    border-color: #7E0509;
+}
+#new-border-2 {
+    border-color: #7E0509;
+}
+.under {
+    color: #4CB2D4;
+}
+#under-border {
+    border-color: #4CB2D4;
+}
+#under-border-2 {
+    border-color: #4CB2D4;
+}
+.over {
+    color: #011D70;
+}
+#over-border {
+    border-color: #011D70;
+}
+#over-border-2 {
+    border-color: #011D70;
+}
+.west {
+    color: #F8C919;
+}
+#west-border {
+    border-color: #F8C919
+}
+#west-border-2 {
+    border-color: #F8C919
+}
+.ost {
+    color: #F48300;
+}
+#ost-border {
+    border-color: #F48300;
+}
+#ost-border-2 {
+    border-color: #F48300;
 }
 
 /* Allgemeines */
@@ -328,7 +453,7 @@ section {
 }
 
 .icon-left {
-    float: right;
+    float: right; !important;
 }
 
 .chart-headline {
