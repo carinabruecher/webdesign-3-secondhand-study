@@ -1,45 +1,147 @@
+/* Tooltip Buttom*/
+.text-hover {
+    position: relative;
+    display: inline-block;
+}
+.text-hover .text-hover-content {
+    visibility: hidden;
+    width: 300px;
+    background-color: rgba(255,255,255,50);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #2F8E12;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    box-shadow: 2px 2px 5px 0px #D4D4D4;
+}
+.text-hover .text-hover-content::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #2F8E12 transparent;
+}
+.text-hover:hover .text-hover-content {
+    visibility: visible;
+}
+.tooltip-headline {
+    text-align: center;
+}
+
+/* Tooltip Right*/
+.tooltip-right {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-right .tooltiptext-right {
+    visibility: hidden;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 30);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #2F8E12;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 141%;
+    box-shadow: 2px 2px 5px 0px #000000;
+}
+.tooltip-right .tooltiptext-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #2F8E12 transparent transparent;
+}
+.tooltip-right:hover .tooltiptext-right {
+    visibility: visible;
+}
+
+/* Tooltip Left*/
+.tooltip-left {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-left .tooltiptext-left {
+    visibility: hidden;
+    width: 300px;
+    background-color: rgba(255,255,255,50);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #2F8E12;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -17px;
+    right: 105%;
+    box-shadow: 2px 2px 5px 0px #D4D4D4;
+}
+.tooltip-left .tooltiptext-left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #2F8E12;
+}
+.tooltip-left:hover .tooltiptext-left {
+    visibility: visible;
+}
+
+/* Allgemeines */
 * {
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: Barlow !important;
     height: 100vh;
     line-height: 1.6;
     overflow: hidden;
 }
-
 h1 {
     font-weight: bold;
     font-size: 70pt;
     line-height: 70pt;
     color: #2F8E12;
 }
-
 h2 {
     padding-top: 15px;
     font-size: 18pt;
 }
-
 h3 {
     font-size: 28pt;
     color: #2F8E12;
     font-weight: bold;
 }
-
 p {
     font-size: 12pt !important;
 }
-
 hr {
     border: 5px solid #2F8E12;
 }
-
 strong {
     font-weight: bold;
 }
-
+a {
+    color: #2F8E12;
+}
 .container {
     width: 100%;
     height: 100%;
@@ -53,6 +155,28 @@ strong {
     padding-left: 0px;
     padding-right: 0px;
 
+}
+
+/* Navigation */
+.navigation-box {
+    padding-top: 20%;
+}
+.navigation {
+    color: #ffffff;
+    list-style-type: none;
+}
+.circle-white {
+    color: #ffffff;
+}
+.circle-green {
+    color: #2F8E12;
+}
+.fa-circle {
+    padding-top: 20px;
+}
+.navi-active {
+    font-size: 20pt;
+    margin-left: -5px;
 }
 
 .lead {
@@ -70,7 +194,7 @@ section {
 }
 
 .headline {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .underline {
@@ -83,7 +207,7 @@ section {
 }
 
 .headline-block {
-    padding-left: 40%;
+    padding-left: 29%;
     padding-right: 100px;
     padding-top: 18%;
 }
@@ -111,21 +235,22 @@ section {
 
 .legend {
     padding-top: 60px;
+    padding-left: 8%;
 }
 
 .illu-group {
-    height: 400px;
-    padding-left: 28%;
+    height: 529px;
 }
 
 .group-lable {
     text-align: center;
+    margin-left: -166px;
 }
 
 .about-study {
-    padding-left: 23%;
+    padding-left: 17%;
     padding-right: 25%;
-    padding-top: 8%;
+    padding-top: 12%;
 }
 
 .numbers-head {
@@ -134,13 +259,16 @@ section {
 }
 
 .numbers-content {
-    padding-left: 8%;
     padding-right: 3%;
+    padding-top: 8%;
 }
 
 .characters-head {
-    padding-left: 8%;
     padding-right: 12%;
+}
+
+.navigation-characters {
+    padding-top: 17%;
 }
 
 .climate-headline {
@@ -153,9 +281,8 @@ section {
 }
 
 .footer-content {
-    padding-left:  8%;
+    padding-left: 8%;
 }
-
 
 .consum-headline {
     padding-left: 8%;
@@ -215,10 +342,27 @@ section {
 }
 
 .questions-climate {
-    margin-top: -162px;
     padding-left: 70px;
+    padding-right: 20px;
 }
 
+.questions-consum {
+    margin-top: -218px;
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+.foot-note {
+    padding-top: 190px;
+}
+
+.highcharts-description {
+    text-align: center; !important;
+}
+
+.subline {
+    font-size: 10pt;
+}
 
 #chartdiv {
     width: 100%;
@@ -226,29 +370,23 @@ section {
 
 /* Section Images */
 section#home {
-    background: url('assets/background-home-3.png')no-repeat center center/cover;;
+    background: url('assets/background-home-3.png') no-repeat center center/cover;;
 }
-
 section#study {
-    background: url('assets/background-study-2.png')no-repeat center center/cover;;
+    background: url('assets/background-study-2.png') no-repeat center center/cover;;
 }
-
 section#numbers {
-    background: url('assets/background-numbers.png')no-repeat center center/cover;;
+    background: url('assets/background-numbers.png') no-repeat center center/cover;;
 }
-
 section#characters {
-    background: url('assets/background-characters.png')no-repeat center center/cover;;
+    background: url('assets/background-characters.png') no-repeat center center/cover;;
 }
-
 section#climate {
-    background: url('assets/background-climate-5.png')no-repeat center center/cover;;
+    background: url('assets/background-climate-5.png') no-repeat center center/cover;;
 }
-
 section#consum {
-    background: url('assets/background-consum-2.png')no-repeat center center/cover;;
+    background: url('assets/background-consum-2.png') no-repeat center center/cover;;
 }
-
 section#footer {
-    background: url('assets/background-footer.png')no-repeat center center/cover;;
+    background: url('assets/background-footer.png') no-repeat center center/cover;;
 }

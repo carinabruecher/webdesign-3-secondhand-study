@@ -19,6 +19,16 @@ Highcharts.chart('climate1', {
         categories: [
             '1','2','3','4','5','6','7','8','9'
         ],
+        plotBands: [{
+            color: 'rgba(0, 0, 255, 0.05)',
+            from: '1'
+        }, {
+            color: 'rgba(0, 255, 0, 0.05)',
+            from: '3'
+        }, {
+            color: 'rgba(250, 0, 0, 0.05)',
+            from: '6'
+        }],
         gridLineWidth: 1
     },
 
@@ -48,7 +58,7 @@ Highcharts.chart('climate1', {
     }],
     tooltip: {
         formatter: function() {
-            return 'Der Frage ' + this.x + ' stimmen ' +  this.y + '% der ' + this.series.name + ' zu.' ;
+            return 'Der Aussage ' + this.x + ' stimmen ' +  this.y + '% der ' + this.series.name + ' zu.' ;
         }
     }
 });
