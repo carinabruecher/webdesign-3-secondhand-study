@@ -307,9 +307,9 @@ Highcharts.chart('consum2', {
     },
     series: [{
         name: 'Unter 30',
-        data: [79,77,50,47,45,21,18],
+        data: [79, 77, 50, 47, 45, 21, 18],
         color: '#0083c2'
-    }, {
+    },{
         name: 'über 30',
         data: [88,83,46,44,38,14,10],
         color: '#46d3ed'
@@ -355,7 +355,7 @@ Highcharts.chart('consum3', {
                 to: 5.5
             }
         ],
-        gridLineWidth: 1
+        gridLineWidth: 2
     },
 
     yAxis: {
@@ -365,7 +365,7 @@ Highcharts.chart('consum3', {
         allowDecimals: false,
         min: 0,
         max: 100,
-        gridLineWidth: 1
+        gridLineWidth: 2
     },
     plotOptions: {
         area: {
@@ -379,8 +379,7 @@ Highcharts.chart('consum3', {
     }, {
         name: 'Ost',
         data: [86,77,44,44,36,20,13],
-        color: '#F48300'
-
+        color: '#F48300',
     }],
     tooltip: {
         formatter: function() {
